@@ -1,18 +1,18 @@
 import WeatherModel from '../model/Weather.mjs';
-import XmlBodyParser from "../lib/XmlBodyParser.mjs";
+import XmlBodyParser from '../lib/XmlBodyParser.mjs';
 
 describe('As a Weather API user', () => {
     describe('I have to get HTTP response body', () => {
-        test('with [Title] node', async () => {
-            let {data} = await WeatherModel.getWeatherData();
+        test('with [Title] node', async() => {
+            const {data} = await WeatherModel.getWeatherData();
             const title = XmlBodyParser.getTitle(data);
 
             //  TODO: insert verifications to verify Title node value
             // ...
         });
 
-        test('with [Channel] items', async () => {
-            let {data} = await WeatherModel.getWeatherData();
+        test('with [Channel] items', async() => {
+            const {data} = await WeatherModel.getWeatherData();
             const items = XmlBodyParser.getItems(data);
 
             //  TODO: insert verifications to check that every item node contains the following child nodes:
