@@ -24,7 +24,7 @@ describe('As a Weather API user', () => {
 
             //  TODO: the verifications should check that:
             // - link node value contains a href
-            // - guid node has "isPermaLink" attrubyte
+            // - guid node has "isPermaLink" attribute
 
         });
     });
