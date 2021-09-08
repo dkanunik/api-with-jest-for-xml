@@ -1,18 +1,17 @@
-import AppConfig from '../configs/AppConfig.cjs';
+import AppConfig from '../configs/AppConfig';
 
 import axios from 'axios';
 
-class Weather {
+class WeatherModel {
 
     static async getWeatherData() {
         const params = 'locCode=10001';
         try {
             return await axios.get(AppConfig.baseUrl + params);
         } catch (e) {
-            console.log(`Request [${AppConfig.baseUrl}${params}] returned: `);
-            console.log(e);
+            return e.response;
         }
     }
 }
 
-export default Weather;
+export default WeatherModel;

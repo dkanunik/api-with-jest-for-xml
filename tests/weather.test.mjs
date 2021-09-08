@@ -1,5 +1,5 @@
-import WeatherModel from '../model/Weather.mjs';
-import XmlBodyParser from '../lib/XmlBodyParser.mjs';
+import WeatherModel from '../model/WeatherModel';
+import XmlBodyParser from '../lib/XmlBodyParser';
 
 describe('As a Weather API user', () => {
     describe('I have to get HTTP response body', () => {
