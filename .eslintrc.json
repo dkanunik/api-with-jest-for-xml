@@ -142,6 +142,7 @@
     "module": false,
     "inject": false,
     "describe": false,
-    "it": false
+    "it": false,
+    "test": false
   }
 }
